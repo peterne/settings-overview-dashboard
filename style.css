@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1em;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.settings-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.settings-box__item {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50px auto; /* Two columns */
+}
+
+.settings-box .dl-icon {
+  font-size: 30px;
+  vertical-align: top;
+  color: #707070;
+}
+
+.settings-box dl,
+.settings-box dd,
+.settings-box dt {
+  margin: 0;
+  padding: 0;
+}
+
+.settings-box dt {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.settings-box dd > i {
+  margin-right: 10px;
+}
+
+.settings-box ul {
+  grid-row: 2; /* Place ul in the second row */
+  grid-column: span 2; /* Span both columns for ul */
+  margin: 10px 0 0 75px;
+  padding: 0;
+}
+
+.settings-box li {
+  line-height: 24px;
+}
